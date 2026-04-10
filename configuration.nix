@@ -9,8 +9,8 @@
   boot.loader.efi.canTouchEfiVariables = true;
 
   # Intel iGPU
-  hardware.opengl.enable = true;
-  hardware.opengl.extraPackages = with pkgs; [
+  hardware.graphics.enable = true;
+  hardware.graphics.extraPackages = with pkgs; [
     intel-media-driver
     intel-compute-runtime
   ];
