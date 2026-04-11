@@ -33,7 +33,7 @@
 
   # System packages
   environment.systemPackages = with pkgs; [
-    git wget curl
+    git wget curl ly
     pciutils usbutils
   ];
 
