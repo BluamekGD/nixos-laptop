@@ -78,9 +78,9 @@
 
     "network": {
         "interval": 10,
-        "format-wifi": "  {essid} {signalStrength} ",
-        "format-ethernet": "󱓞 Wired connection",
-        "format-disconnected": "",
+        "format-wifi": "  Connected ({signalStrength}%)",
+        "format-ethernet": "󱓞 Connected",
+        "format-disconnected": " Disconnected",
     },
 
     "bluetooth": {
