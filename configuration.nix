@@ -54,7 +54,21 @@
   };
 
   # ly DM
-  services.ly.enable = true;
+  enviroment.systemPackages = with pkgs; [
+  systemd.services.ly = {
+    enable = true;
+    description = "ly Display Manager";
+    after = [ "systemd-user-sessions.service" ];
+    wantedBy = [ "multi-user.target" ];
+    conflicts = [ "getty@tty1.service" ];
+    serviceConfig = {
+      ExecStart = "${pkgs.ly}/bin/ly";
+      StandardInput = "tty";
+      TTYPath = "/dev/tty1";
+      TTYReset = true;
+      TTYVHangup = true;
+    };
+  };
 
   # Wayland env vars
   environment.sessionVariables = {
