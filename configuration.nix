@@ -53,6 +53,9 @@
     portalPackage = hyprland.packages.x86_64-linux.xdg-desktop-portal-hyprland;
   };
 
+  # Xserver (needed for session files)
+  services.xserver.enable = true;
+
   # Ly DM
   systemd.services.ly = {
     enable = true;
@@ -68,6 +71,9 @@
       TTYVHangup = true;
     };
   };
+
+  # PAM for ly
+  security.pam.services.ly.enable = true;
 
   # Wayland env vars
   environment.sessionVariables = {
