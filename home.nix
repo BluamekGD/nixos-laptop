@@ -8,7 +8,7 @@
     settings = {
       "$mod" = "SUPER";
       bind = [
-        "$mod, Return, exec, foot"
+        "$mod, Return, exec, kitty"
         "$mod, Q, killactive"
         "$mod, D, exec, fuzzel"
         "$mod, F, fullscreen"
@@ -30,6 +30,7 @@
     brightnessctl
     playerctl
     fastfetch
+    neovim
   ];
 
   home.stateVersion = "24.11";

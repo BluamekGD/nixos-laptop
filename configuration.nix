@@ -53,15 +53,10 @@
     portalPackage = hyprland.packages.x86_64-linux.xdg-desktop-portal-hyprland;
   };
 
-  # Display manager
-  services.greetd = {
+  # SDDM
+  services.displayManager.sddm = {
     enable = true;
-    settings = {
-      default_session = {
-        command = "${pkgs.tuigreet}/bin/tuigreet --cmd Hyprland";
-        user = "greeter";
-      };
-    };
+    wayland.enable = true;
   };
 
   # Wayland env vars
