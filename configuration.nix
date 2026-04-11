@@ -23,10 +23,6 @@
   time.timeZone = "Europe/Warsaw";
   i18n.defaultLocale = "en_US.UTF-8";
 
-  # Keyboard layout fix
-  console.keyMap = "us";
-  services.xserver.xkb.layout = "us";
-
   # User
   users.users.bartek = {
     isNormalUser = true;
@@ -57,11 +53,8 @@
     portalPackage = hyprland.packages.x86_64-linux.xdg-desktop-portal-hyprland;
   };
 
-  # SDDM
-  services.displayManager.sddm = {
-    enable = true;
-    wayland.enable = true;
-  };
+  # ly DM
+  services.ly.enable = true;
 
   # Wayland env vars
   environment.sessionVariables = {
