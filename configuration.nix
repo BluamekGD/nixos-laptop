@@ -37,6 +37,9 @@
     pciutils usbutils
   ];
 
+  # Fonts
+  fonts.packages = with pkgs; [ pkgs.nerd-fonts ];
+
   # Audio
   security.rtkit.enable = true;
   services.pipewire = {
