@@ -18,6 +18,8 @@
     swaylock
     fuzzel
     fastfetch
+    cava
+    cmatrix
   ];
 
   # .zshrc
