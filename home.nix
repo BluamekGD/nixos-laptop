@@ -37,6 +37,7 @@
     autoload -Uz compinit
     compinit
     # End of lines added by compinstall
+    PROMPT='%n %~ $ '
     alias nixfetch='fastfetch --kitty-direct /etc/nixos/resources/logo.png'
     nixfetch";
 
