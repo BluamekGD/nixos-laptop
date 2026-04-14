@@ -39,12 +39,6 @@
     pciutils usbutils
   ];
 
-  # Unfree packages (needed for steam)
-  nixpkgs.config.allowUnfree = true;
-
-  # Enable GAMING with Steam (goat of game distribution)
-  programs.steam.enable = true;
-
   # Fonts
   fonts.packages = with pkgs; [
     nerd-fonts.jetbrains-mono
