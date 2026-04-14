@@ -39,6 +39,21 @@
     pciutils usbutils
   ];
 
+  # Steam (very important!!!!!!!!!!!!!)
+  nixpkgs.config.allowUnfreePredicate = pkg: builtins.elem (lib.getName pkg) [
+    "steam"
+    "steam-original"
+    "steam-unwrapped"
+    "steam-run"
+  ];
+  
+  programs.steam = {
+    enable = true;
+    remotePlay.openFirewall = true;
+    dedicatedServer.openFirewall = true;
+    localNetworkGameTransfers.openFirewall = true;
+  };
+
   # Fonts
   fonts.packages = with pkgs; [
     nerd-fonts.jetbrains-mono
