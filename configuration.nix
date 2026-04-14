@@ -40,11 +40,7 @@
   ];
 
   # Enable GAMING with Steam (goat of game distribution)
-  programs.steam.enable = {
-    enable = true;
-    remotePlay.openFirewall = true;
-    dedicatedServer.openFirewall = false;
-  };
+  programs.steam.enable = true;
 
   # Fonts
   fonts.packages = with pkgs; [
