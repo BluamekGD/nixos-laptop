@@ -262,12 +262,12 @@
   };
   
   # Hyprpaper config
-  xdg.configFile."hypr/hyprpaper.jpg".source = ./resources/hyprpaper.jpg;
+  xdg.configFile."hypr/hyprpaper.png".source = ./resources/hyprpaper.png;
 
   xdg.configFile."hypr/hyprpaper.conf".text = "
     wallpaper {
       monitor = eDP-1
-      path = ~/.config/hypr/hyprpaper.jpg
+      path = ~/.config/hypr/hyprpaper.png
     }
     splash = false";
 
