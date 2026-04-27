@@ -6,6 +6,11 @@
   boot.loader.grub.device = "nodev";
   boot.loader.efi.efiSysMountPoint = "/boot/efi";
   boot.loader.efi.canTouchEfiVariables = true;
+  boot.loader.grub.extraEntries = "
+    menuentry 'UEFI Firmware Settings' --id 'uefi-firmware' {
+      fwsetup
+    }
+  ";
   # Intel iGPU
   hardware.graphics.enable = true;
   hardware.graphics.extraPackages = with pkgs; [
