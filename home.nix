@@ -15,15 +15,21 @@
     playerctl
     wl-clipboard
     pywal16
-    swaylock
     fuzzel
     fastfetch
     cava
+    cbonsai
     cmatrix
     firefox
     cargo
     jellyfin-desktop
   ];
+
+  # Cursors
+  home.file.".local/share/icons" = {
+    source = ./resources/icons;
+    recursive = true;
+  };
 
   # .zshrc
   home.file.".zshrc".text = "
@@ -80,7 +86,7 @@
 
       env = [
         "XCURSOR_SIZE,24"
-        "HYPRCURSOR_SIZE,24"
+	"XCURSOR_THEME,BreezeX-Black"
       ];
 
       general = {

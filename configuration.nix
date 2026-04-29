@@ -36,6 +36,7 @@
     git wget curl neovim
     pciutils usbutils
     brightnessctl
+    libxcursor
   ];
   # Fonts
   fonts.packages = with pkgs; [
