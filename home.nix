@@ -24,6 +24,7 @@
     cargo
     jellyfin-desktop
     bat
+    retroarch
   ];
 
   # Cursors
