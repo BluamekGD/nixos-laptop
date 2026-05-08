@@ -12,6 +12,9 @@
       fwsetup
     }
   ";
+
+  # MakeMKV fix
+  boot.kernelModules = [ "sg" ];
   
   # Intel iGPU
   hardware.graphics.enable = true;
