@@ -26,6 +26,7 @@
     bat
     pix
     makemkv
+    handbrake
   ];
 
   # Cursors
