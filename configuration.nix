@@ -35,12 +35,12 @@
   users.users.bartek = {
     isNormalUser = true;
     extraGroups = [ "wheel" "networkmanager" "video" "audio" ];
-    shell = pkgs.fish;
+    shell = pkgs.zsh;
     initialPassword = "changeme";
   };
 
-  # fish
-  programs.fish.enable = true;
+  # zsh
+  programs.zsh.enable = true;
 
   # System packages
   nixpkgs.config.allowUnfree = true;
@@ -48,7 +48,7 @@
   environment.systemPackages = with pkgs; [
     git wget curl neovim
     pciutils usbutils
-    brightnessctl
+    brightnessctl playerctl
     libxcursor
   ];
 
@@ -69,14 +69,20 @@
     pulse.enable = true;
   };
   
-  # Hyprland
-  programs.hyprland = {
+  # SwayWM
+  programs.sway = {
     enable = true;
-    xwayland.enable = true;
-    package = hyprland.packages.x86_64-linux.hyprland;
-    portalPackage = hyprland.packages.x86_64-linux.xdg-desktop-portal-hyprland;
+    wrapperFeatures.gtk = true;
+    extraPackages = with pkgs; [
+      swaylock
+      swayidle
+      swaybg
+      swaybar
+      wofi
+      wl-clipboard
+    ];
   };
-  
+
   # Ly DM
   services.displayManager.ly = {
     enable = true;
