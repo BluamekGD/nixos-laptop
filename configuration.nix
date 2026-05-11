@@ -35,12 +35,12 @@
   users.users.bartek = {
     isNormalUser = true;
     extraGroups = [ "wheel" "networkmanager" "video" "audio" ];
-    shell = pkgs.zsh;
+    shell = pkgs.fish;
     initialPassword = "changeme";
   };
 
-  # zsh
-  programs.zsh.enable = true;
+  # fish
+  programs.fish.enable = true;
 
   # System packages
   nixpkgs.config.allowUnfree = true;

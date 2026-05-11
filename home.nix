@@ -38,25 +38,6 @@
     recursive = true;
   };
 
-  # zsh
-  programs.zsh = {
-    autosuggestion.enable = true;
-    syntaxHighlighting.enable = true;
-    enableCompletion = true;
-
-    shellAliases = {
-      l = "ls -la";
-      cat = "bat";
-      ga = "git add .";
-      gc = "git commit -m";
-      gs = "git status";
-      gp = "git push";
-      nixfetch = "fastfetch --kitty-direct /etc/nixos/resources/logo.png";
-
-      initContent = "nixfetch";
-    };
-  };
-
   # Wal palette
   home.file.".cache/wal" = {
     source = ./resources/wal;
