@@ -25,5 +25,18 @@
     recursive = true;
   };
 
+  # SwayWM
+  wayland.windowManager.sway = {
+    enable = true;
+    xwayland = true;
+    config = rec {
+      modifier = "Mod4";
+      terminal = "kitty";
+      startup = [
+        {command = "waybar";}
+      ];
+    };
+  };
+
   home.stateVersion = "24.11";
 }

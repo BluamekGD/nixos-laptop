@@ -39,6 +39,9 @@
     initialPassword = "changeme";
   };
 
+  # Gnome keyring cuz sway nixos guide says so
+  services.gnome.gnome-keyring.enable = true;
+
   # zsh
   programs.zsh.enable = true;
 
@@ -80,6 +83,9 @@
       waybar
       wofi
       wl-clipboard
+      grim
+      slurp
+      mako
     ];
   };
 
