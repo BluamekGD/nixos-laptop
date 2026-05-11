@@ -77,7 +77,7 @@
       swaylock
       swayidle
       swaybg
-      swaybar
+      waybar
       wofi
       wl-clipboard
     ];
