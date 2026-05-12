@@ -31,6 +31,12 @@
     recursive = true;
   };
 
+  # Starship (PLEASE make better docs)
+  programs.starship.enable = true;
+  home.file.".config/starship.toml" = {
+    source = ./resources/starship.toml;
+  };
+
   # SwayWM
   wayland.windowManager.sway = {
     enable = true;
