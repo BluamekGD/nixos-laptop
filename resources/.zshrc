@@ -100,3 +100,10 @@ setopt promptsubst
 PROMPT='$('/etc/profiles/per-user/bartek/bin/starship' prompt --terminal-width="$COLUMNS" --keymap="${KEYMAP:-}" --status="${STARSHIP_CMD_STATUS:-}" --pipestatus="${STARSHIP_PIPE_STATUS[*]:-}" --cmd-duration="${STARSHIP_DURATION:-}" --jobs="$STARSHIP_JOBS_COUNT")'
 RPROMPT='$('/etc/profiles/per-user/bartek/bin/starship' prompt --right --terminal-width="$COLUMNS" --keymap="${KEYMAP:-}" --status="${STARSHIP_CMD_STATUS:-}" --pipestatus="${STARSHIP_PIPE_STATUS[*]:-}" --cmd-duration="${STARSHIP_DURATION:-}" --jobs="$STARSHIP_JOBS_COUNT")'
 PROMPT2="$(/etc/profiles/per-user/bartek/bin/starship prompt --continuation)"
+
+### End of starship prompt init
+
+# Aliases
+alias img='kitten icat'
+alias cat='bat'
+alias unicode='kitten unicode-input'
