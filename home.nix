@@ -51,7 +51,7 @@
         {command = "waybar";}
 	{command = "swaybg -o eDP-1 -i /etc/nixos/resources/swaybg.png -m fill";}
 	# The best solution to a problem is usually the easiest. -Ellen McLain (GLaDOS), 2011
-	{command = "swaymsg workspace number 1"}
+	{command = "swaymsg workspace number 1";}
       ];
       bars = [];
       keybindings = let
