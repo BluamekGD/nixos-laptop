@@ -46,6 +46,11 @@
     enable = true;
     xwayland = true;
     config = rec {
+      seat = {
+        "seat0" = {
+          xcursor_theme = "${config.home.pointerCursor.name} ${toString config.home.pointerCursor.size}";
+	};
+      };
       modifier = "Mod4";
       terminal = "kitty --title kitty";
       menu = "wofi --show drun";
