@@ -46,7 +46,7 @@
       modifier = "Mod4";
       terminal = "kitty --title kitty";
       menu = "wofi --show drun";
-      defaultWorkspace = 1;
+      defaultWorkspace = "1";
       startup = [
         {command = "waybar";}
 	{command = "swaybg -o eDP-1 -i /etc/nixos/resources/swaybg.png -m fill";}
