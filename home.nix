@@ -13,11 +13,11 @@
     localsend
   ];
 
-  # omg why wont you work
+  # Cursor
   home.pointerCursor = {
     name = "Bibata-Modern-Classic";
     package = pkgs.bibata-cursors;
-    size = 16;
+    size = 20;
     gtk.enable = true;
     x11.enable = true;
   };
