@@ -39,12 +39,12 @@
   wayland.windowManager.sway = {
     enable = true;
     xwayland = true;
-    seat = {
-      "*" = {
-        xcursor_theme = "${config.home.pointerCursor.name} ${toString config.home.pointerCursor.size}";
-      };
-    };
     config = rec {
+      seat = {
+        "*" = {
+          xcursor_theme = "${config.home.pointerCursor.name} ${toString config.home.pointerCursor.size}";
+        };
+      };
       modifier = "Mod4";
       terminal = "kitty --title kitty";
       menu = "wofi --show drun";
