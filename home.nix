@@ -47,7 +47,7 @@
       };
       modifier = "Mod4";
       terminal = "kitty --title kitty";
-      menu = "wofi --show drun";
+      menu = "fuzzel";
       defaultWorkspace = "1";
       startup = [
         {command = "waybar";}
