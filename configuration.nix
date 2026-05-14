@@ -81,7 +81,7 @@
       swayidle
       swaybg
       waybar
-      wofi
+      fuzzel
       wl-clipboard
       grim
       slurp
