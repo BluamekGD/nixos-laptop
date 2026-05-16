@@ -45,6 +45,8 @@
     enable = true;
     xwayland = true;
     config = rec {
+      
+      # Window borders and gaps
       gaps = {
         inner = 4;
 	outer = 10;
@@ -53,39 +55,49 @@
         border = 6;
 	titlebar = false;
       };
-
       floating = {
         border = 6;
 	titlebar = false;
       };
-
       colors = {
         focused = {
           border = "#ebdbb2";
 	  background = "#ebdbb2";
+	  text = "#1e1e2e";
 	};
 	unfocused = {
           border = "#282828";
 	  background = "#282828";
+	  text = "#1e1e2e";
 	};
       };
+
+      # XCursor
       seat = {
         "*" = {
           xcursor_theme = "${config.home.pointerCursor.name} ${toString config.home.pointerCursor.size}";
         };
       };
+      
+      # Preferences
       modifier = "Mod4";
       terminal = "kitty --title kitty";
       menu = "fuzzel";
       defaultWorkspace = "1";
+      
+      # Waybar and background
       startup = [
         {command = "waybar";}
 	{command = "swaybg -o eDP-1 -i /etc/nixos/resources/swaybg.png -m fill";}
 	# The best solution to a problem is usually the easiest. -Ellen McLain (GLaDOS), 2011
 	{command = "swaymsg workspace number 1";}
       ];
+
+      # I have waybar bro
       bars = [];
+
       keybindings = let
+        # Read from preferences
         mod = config.wayland.windowManager.sway.config.modifier;
 	terminal = config.wayland.windowManager.sway.config.terminal;
 	menu = config.wayland.windowManager.sway.config.menu;
@@ -141,5 +153,6 @@
     };
   };
 
+  # I did read the comment
   home.stateVersion = "24.11";
 }
