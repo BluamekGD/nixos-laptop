@@ -45,6 +45,28 @@
     enable = true;
     xwayland = true;
     config = rec {
+      gaps = {
+        inner = 4;
+	outer = 10;
+      };
+      window = {
+        border = 6;
+	titlebar = false;
+      };
+
+      floating = {
+        border = 6;
+	titlebar = false;
+      };
+
+      colors = {
+        focused = {
+          border = "#ebdbb2";
+	};
+	unfocused = {
+          border = "#282828";
+	};
+      };
       seat = {
         "*" = {
           xcursor_theme = "${config.home.pointerCursor.name} ${toString config.home.pointerCursor.size}";

@@ -49,7 +49,8 @@
   nixpkgs.config.allowUnfree = true;
 
   environment.systemPackages = with pkgs; [
-    git wget curl neovim
+    git wget curl
+    neovim alejandra nil
     pciutils usbutils
     brightnessctl playerctl
     libxcursor
