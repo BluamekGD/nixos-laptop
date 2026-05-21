@@ -82,6 +82,17 @@
           xcursor_theme = "${config.home.pointerCursor.name} ${toString config.home.pointerCursor.size}";
         };
       };
+
+      # Removing "The Devil's Absolute Nightmare"
+      input = {
+        "type:pointer" = {
+          accel_profile = "flat";
+	  # "The Devil's Absolute Nightmare" Removed, Yay!!!!!!
+
+	  # Sensitivity
+	  pointer_accel = "0";
+	};
+      };
       
       # Preferences
       modifier = "Mod4";
