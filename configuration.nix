@@ -144,12 +144,14 @@
       battery_id = "BAT1";
 
       # Power keys
-      shutdown_cmd = "/sbin/shutdown -a now";
+      shutdown_cmd = "/run/current-system/sw/bin/systemctl poweroff";
       shutdown_key = "F1";
-      restart_cmd = "/sbin/shutdown -r now";
+      restart_cmd = "/run/current-system/sw/bin/systemctl reboot";
       restart_key = "F2";
       sleep_key = "F3";
+      sleep_cmd = "/run/current-system/sw/bin/systemctl suspend";
       hibernate_key = "F4";
+      hibernate_cmd = "/run/current-system/sw/bin/systemctl hibernate";
 
       # Margins
       margin_box_h = 2;
