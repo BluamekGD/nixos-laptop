@@ -21,6 +21,9 @@
   hardware.graphics.extraPackages = with pkgs; [
     intel-media-driver
     intel-compute-runtime
+
+    # Holy shit this igpu is old :sob:
+    mesa
   ];
 
   # Networking
