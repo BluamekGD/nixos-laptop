@@ -60,6 +60,7 @@
     brightnessctl
     playerctl
     libxcursor
+    xwayland
   ];
 
   # Fonts

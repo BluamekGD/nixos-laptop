@@ -15,6 +15,7 @@
     makemkv
     handbrake
     localsend
+    steam
   ];
 
   # Cursor
