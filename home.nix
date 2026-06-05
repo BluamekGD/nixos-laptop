@@ -29,6 +29,9 @@
   gtk = {
     enable = true;
 
+    # Old NixOS thing
+    gtk4.theme = config.gtk.theme;
+
     theme = {
       name = "Gruvbox-Dark-B";
       package = pkgs.gruvbox-gtk-theme;
