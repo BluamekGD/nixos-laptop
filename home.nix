@@ -164,6 +164,7 @@
         mod = config.wayland.windowManager.sway.config.modifier;
         terminal = config.wayland.windowManager.sway.config.terminal;
         menu = config.wayland.windowManager.sway.config.menu;
+        fileManager = "nautilus";
       in {
         # ------------------ Keybinds ------------------
 
@@ -171,6 +172,7 @@
 
         "${mod}+Return" = "exec ${terminal}";
         "${mod}+Space" = "exec ${menu}";
+        "${mod}+e" = "exec ${fileManager}";
         "${mod}+q" = "kill";
 
         # ------ Login ------
