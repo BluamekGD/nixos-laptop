@@ -45,6 +45,13 @@
   # Gnome keyring cuz sway nixos guide says so
   services.gnome.gnome-keyring.enable = true;
 
+  # XDG Portal (like the game? (i choked a sub-20 speedrun so bad bro))
+  xdg.portal = {
+    enable = true;
+    extraPortals = [pkgs.xdg-desktop-portal-gtk];
+    config.common.default = "*";
+  };
+
   # zsh
   programs.zsh.enable = true;
 
