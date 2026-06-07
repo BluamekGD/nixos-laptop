@@ -7,3 +7,5 @@
 5. Why did I install NixOS
 6. Infecting others with NixOS
 7. Cycle repeats
+
+# IT COMES WITH STEAM!!!
