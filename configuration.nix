@@ -75,10 +75,33 @@
 
   # Fonts
   fonts.packages = with pkgs; [
+    nerd-fonts.ubuntu
+    nerd-fonts.dejavu-sans-mono
+    nerd-fonts.inconsolata
+    nerd-fonts.iosevka
+    nerd-fonts.symbols-only
     nerd-fonts.jetbrains-mono
     nerd-fonts.fira-code
     nerd-fonts.hack
     nerd-fonts.noto
+
+    inter
+    source-sans
+    source-serif
+    source-code-pro
+    corefonts
+    vistafonts
+    cantarell-fonts
+    ubuntu_font_family
+    freefont_ttf
+    dejavu_fonts
+    liberation_ttf
+
+    noto-fonts
+    noto-fonts-cjk-sans
+    noto-fonts-cjk-serif
+    noto-fonts-emoji
+    noto-fonts-extra
   ];
 
   # Audio
